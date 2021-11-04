@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    tools:context=".fragments.LoginFragment">
+
+    <LinearLayout
+        android:id="@+id/input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp" >
+
+
+        <ImageButton
+            android:id="@+id/add_image_button"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_baseline_person_add_alt_1_24" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/add_name_layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/add_name_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/round_corner"
+                android:hint="Name"
+                android:textColorHint="@color/white" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/add_phone_layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:passwordToggleContentDescription="@string/app_name">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/add_phone_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/round_corner"
+                android:hint="Phone number"
+                android:inputType="phone" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/add_birthday_layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:endIconDrawable="@drawable/ic_baseline_calendar_today_24"
+            app:endIconMode="custom"
+            app:passwordToggleContentDescription="@string/app_name">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/add_birthday_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/round_corner"
+                android:hint="Date"
+                android:inputType="date" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round_corner">
+
+            <Spinner
+                android:id="@+id/add_role_spinner"
+                style="@style/Widget.AppCompat.DropDownItem.Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radiobutton_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nam"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/radiobutton_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:text="Nữ"
+                android:textSize="18sp" />
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/add_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/input_layout"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginVertical="15dp"
+        android:background="@drawable/round_corner"
+        android:text="Thêm"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>

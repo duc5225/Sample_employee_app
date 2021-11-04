@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">EmployeeApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="save_usn">Saved Username</string>
+    <string name="save_pwd">Saved Password</string>
+    <string name="apr_usn">Approved username</string>
+    <string name="apr_pwd">Approved password</string>
+    <string-array name="roles">
+        <item>Bảo vệ</item>
+        <item>Kĩ thuật</item>
+        <item>Nhân sự</item>
+        <item>Văn phòng</item>
+        <item>Giám đốc</item>
+    </string-array>
+</resources>

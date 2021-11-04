@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background_gradient"
+    tools:context=".fragments.LoginFragment">
+
+    <LinearLayout
+        android:id="@+id/input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="70dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đăng nhập"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+             />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/sign_in_username_layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="30dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/sign_in_username_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/round_corner"
+                android:hint="Username"
+                android:textColorHint="@color/white"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/sign_in_password_layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleContentDescription="@string/app_name">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/sign_in_password_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/round_corner"
+                android:hint="Password" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ghi nhớ đăng nhập"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/input_layout"
+        android:orientation="vertical"
+        android:paddingHorizontal="40dp">
+
+        <Button
+            android:id="@+id/sign_in_btn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginVertical="30dp"
+            android:background="@drawable/round_corner"
+            android:text="Đăng nhập"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/sign_up_btn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/sign_in_btn"
+            android:background="@drawable/round_corner"
+            android:text="Đăng ký"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
